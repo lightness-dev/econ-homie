@@ -5,12 +5,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome to Econ Homie</title>
     <style>
+        @keyframes gradient {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
+        }
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: url('https://via.placeholder.com/1600x900.png') no-repeat center center fixed;
-            background-size: cover;
+            background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+            background-size: 400% 400%;
+            animation: gradient 15s ease infinite;
             color: #333;
             display: flex;
             flex-direction: column;
@@ -46,7 +58,10 @@
         h1 {
             color: #2c3e50;
         }
-        p {
+        h2 {
+            color: #16a085;
+        }
+        p, ul {
             line-height: 1.6;
         }
         .button {
@@ -75,15 +90,36 @@
     <div class="container">
         <h1>Welcome to Econ Homie</h1>
         <p>Experience a dynamic virtual economy with Econ Homie, a powerful Discord bot designed to simulate real-world economic activities. Join games, engage in paper trading, invest in virtual real estate, and more.</p>
-        <p>Econ Homie brings an engaging and fun twist to your community interactions with various commands and activities that make managing a virtual economy exciting. With Econ Homie, you can:</p>
+        <a href="documentation.html" class="button">View Documentation</a>
+        <a href="privacy-policy.html" class="button">View Policies</a>
+        <a href="https://discord.com/api/oauth2/authorize?client_id=1086515680465141760&permissions=1084479761472&scope=bot" class="button">Invite Econ Homie</a>
+    </div>
+    <div class="container">
+        <h2>About Econ Homie</h2>
+        <p>Econ Homie is Discord's ultimate economy bot, bringing an entertaining twist to your community interactions. It features various fun commands, and users can earn, game, and spend virtual currency known as "Dollaridoos". It's important to remember that all currency, real estate, stocks, and crypto inside this virtual economy hold no real-world monetary value and are generated and managed solely by Econ Homie.</p>
+    </div>
+    <div class="container">
+        <h2>Features</h2>
         <ul>
             <li>Engage in paper trading of stocks and cryptocurrencies</li>
             <li>Invest in a virtual real estate market</li>
             <li>Run virtual businesses and earn profits</li>
             <li>Participate in various games and activities to earn virtual currency</li>
         </ul>
-        <a href="documentation.html" class="button">View Documentation</a>
-        <a href="privacy-policy.html" class="button">View Policies</a>
+    </div>
+    <div class="container">
+        <h2>What We Offer</h2>
+        <p>Our bot offers an immersive experience with a variety of commands that cater to different aspects of a virtual economy. Whether you're interested in trading, real estate, running a business, or just having fun with games, Econ Homie has something for everyone.</p>
+        <ul>
+            <li><strong>Trading:</strong> Simulate trading stocks and cryptocurrencies with real-time updates.</li>
+            <li><strong>Real Estate:</strong> Invest in properties and manage them to generate virtual income.</li>
+            <li><strong>Business Management:</strong> Start and manage your own virtual business.</li>
+            <li><strong>Games and Activities:</strong> Participate in various games to earn and spend Dollaridoos.</li>
+        </ul>
+    </div>
+    <div class="container">
+        <h2>Join Our Community</h2>
+        <p>Become a part of our growing community and explore the exciting virtual economy of Econ Homie. With regular updates and new features, there's always something new to discover and enjoy.</p>
         <a href="https://discord.com/api/oauth2/authorize?client_id=1086515680465141760&permissions=1084479761472&scope=bot" class="button">Invite Econ Homie</a>
     </div>
 </body>
